@@ -3,7 +3,7 @@ chpipeline {
     stages {
         stage('Build') { 
             steps {
-                echo 'mvn -B -DskipTests clean package' 
+                sh 'mvn -B -DskipTests clean package' 
             }
         }
     }
